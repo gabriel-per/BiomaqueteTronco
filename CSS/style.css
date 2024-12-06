@@ -4,6 +4,38 @@ body {
     font-family: 'Poppins', sans-serif;
   }
 
+.about .content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.about .content .about-video{
+    margin-top: -5rem;
+    flex: 1 1 45rem;
+    margin-right: 5rem;
+}
+.about .content .about-video video{
+    width: 640px;
+    height: 360px;
+}
+.about .content .about-text{
+    flex: 1 1 45rem;
+}
+.about .content .about-text h1{
+    color: var(--black);
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+.about .content .about-text p{
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
   #container {
     position: fixed; /* Fixed position so it stays in the same spot */
     top: 50%;

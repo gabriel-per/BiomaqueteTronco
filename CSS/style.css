@@ -30,6 +30,9 @@ section{
     margin-top: 10rem;
 }
 body {
+    min-height: 100vh;
+    display: grid; /* para garantir que o footer sempre preencha toda a parte de baixo mesmo se a altura da página for baixa */
+    grid-template-rows: auto 1fr auto;
     margin: 0;
     background: #f4f4f9;
     font-family: 'Poppins', sans-serif;
@@ -197,12 +200,26 @@ body {
     background: white;
     border: 0px;
 }
+h2 {
+    color: white;
+    font-size: 30px;
+}
+#sobre p {
+    color: white;
+    font-size: 18px;
+    margin-right: 80px;
+    margin-left: 80px;
+    text-align: center;
+}
 .main {
     text-align: center;
     font-size: 20px;
 }
 #first {
-    margin-top: calc(50vh - 180px);
+    margin-top: calc(50vh - 250px);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 .section-title{
     text-align: center;
